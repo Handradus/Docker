@@ -1,0 +1,12 @@
+DB_HOST=localhost
+DB_PORT=5432
+DB_USERNAME=tu_usuario
+DB_PASSWORD=tu_contraseña
+DB_NAME=tcg_pokemon
+DB_HOST=localhost
+DB_PORT=5432
+DB_USERNAME=postgres
+DB_PASSWORD=89093957
+DB_NAME=tcg_pokemon
+
+POKEMONTCG_API_KEY=ede6a287-0b53-45e4-aa9f-4793dea2f2d3
