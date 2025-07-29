@@ -1,0 +1,9 @@
+HOST=0.0.0.0
+PORT=3000
+DB_HOST=database
+DB_PORT=5432
+DB_USERNAME=pokemon_user
+DB_PASSWORD=pokemon_pass123
+DB_NAME=pokemon_tcg_db
+
+POKEMONTCG_API_KEY=ede6a287-0b53-45e4-aa9f-4793dea2f2d3
