@@ -20,6 +20,18 @@ AppDataSource.initialize()
 
     await seedTiendas(); // ahora puedes usar await sin error
 
+    // Ruta base para verificar que el API funciona
+    app.get('/api', (req, res) => {
+      res.json({ 
+        message: 'Pokemon TCG API funcionando correctamente',
+        version: '1.0.0',
+        endpoints: [
+          '/api/cartas',
+          '/api/historial'
+        ]
+      });
+    });
+
     // Rutas
     app.use('/api/cartas', cartaRoutes);
     app.use('/api/historial', historialRoutes);
