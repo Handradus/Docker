@@ -2,6 +2,7 @@ const express = require('express');
 const { AppDataSource } = require('./data-source');
 const { seedTiendas } = require('./scripts/seedTiendas');
 require('dotenv').config({ path: './src/config/.env' });
+const { seedCartasPikachu } = require('./scripts/seedPikachu');
 
 const cartaRoutes = require('./routes/cartaRoutes');
 const historialRoutes = require('./routes/historialRoutes');
@@ -19,6 +20,7 @@ AppDataSource.initialize()
     console.log('📦 Conectado a PostgreSQL correctamente');
 
     await seedTiendas(); // ahora puedes usar await sin error
+    await seedCartasPikachu();
 
     // Ruta base para verificar que el API funciona
     app.get('/api', (req, res) => {
